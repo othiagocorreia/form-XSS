@@ -6,33 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/main.css">
+  <script src="/script.js"></script>
 
   <title>Form-XSS</title>
 </head>
 <body>
-  <div class="form">
-    <div class="head">
-      <h2 class="msg"> Crie a sua conta agora mesmo no nosso banco!</h2>
-      <p class="or">
-        OU
-      </p>
-    </div>
+  <div class="container">
+    <h1>Login</h1>
 
-    <div class="main">
-      <form action="/cadastra.php" class="form-vuln">
-        <!-- Name -->
-        <label class="lbl" for="name">Nome:</label><br>
-        <input class="input" type="text" id="name-input" name="name-input"><br>
+    <div class="form">
+      <form action="/cadastra.php" method="POST">
+        <!--Nome-->
+        <div class="input-field">
+          <input required class="input-data" type="text" name="nome" id="nome">
+          <label>Nome</label>
+          <span class="error"></span>
+          <!--<div class="underline"></div>-->
+        </div>
 
-       <!-- Email -->
-       <label class="lbl" for="email">Email:</label><br>
-       <input class="input" type="email" id="email-input" name="email-input"><br> 
+        <!--Email-->
+        <div class="input-field">
+          <input required class="input-data" type="email" name="email" id="email" placeholder="Digite seu e-mail"
+          >
+          <!--<div class="underline"></div>-->
+        </div>
 
-       <!-- Senha -->
-       <label class="lbl" for="password">Password:</label><br>
-       <input class="input" type="password" id="password-input" name="password-input"><br>
-      
-       <input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar">
+        <!--Senha-->
+        <div class="input-field">
+          <input required class="input-data" type="password" name="password" id="password"
+          placeholder="Digite sua senha" >
+          <!--<div class="underline"></div>-->
+        </div>
+
+        <input type="submit" class="btn-cad" value="Cadastrar">
       </form>
     </div>
   </div>
