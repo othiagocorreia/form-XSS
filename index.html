@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/main.css">
-  <script src="/script.js"></script>
+  <script src="/script.js" defer></script>
 
   <title>Form-XSS</title>
 </head>
+
 <body>
   <div class="container">
     <h1>Login</h1>
@@ -21,26 +23,26 @@
           <input required class="input-data" type="text" name="nome" id="nome">
           <label>Nome</label>
           <span class="error"></span>
-          <!--<div class="underline"></div>-->
         </div>
 
         <!--Email-->
         <div class="input-field">
-          <input required class="input-data" type="email" name="email" id="email" placeholder="Digite seu e-mail"
-          >
-          <!--<div class="underline"></div>-->
+          <input required class="input-data" type="email" name="email" id="email">
+          <label>Email</label>
+          <span class="error"></span>
         </div>
 
         <!--Senha-->
         <div class="input-field">
-          <input required class="input-data" type="password" name="password" id="password"
-          placeholder="Digite sua senha" >
-          <!--<div class="underline"></div>-->
+          <input required class="input-data" type="password" name="senha" id="password">
+          <label>Senha</label>
+          <span class="error"></span>
         </div>
 
-        <input type="submit" class="btn-cad" value="Cadastrar">
+        <button type="submit" class="btn-cad">Cadastrar</button>
       </form>
     </div>
   </div>
 </body>
+
 </html>
