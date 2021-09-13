@@ -7,36 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/main.css">
-  <script src="/script.js" defer></script>
+ <!-- <script src="/script.js" defer></script> -->
 
   <title>Form-XSS</title>
 </head>
 
 <body>
   <div class="container">
-    <h1>Login</h1>
-
     <div class="form">
+      <div class="msg">
+        <h1>Login</h1>
+      </div>
       <form action="/cadastra.php" method="POST">
         <!--Nome-->
         <div class="input-field">
           <input required class="input-data" type="text" name="nome" id="nome">
           <label>Nome</label>
-          <span class="error"></span>
         </div>
 
         <!--Email-->
         <div class="input-field">
           <input required class="input-data" type="email" name="email" id="email">
           <label>Email</label>
-          <span class="error"></span>
         </div>
 
         <!--Senha-->
         <div class="input-field">
           <input required class="input-data" type="password" name="senha" id="password">
           <label>Senha</label>
-          <span class="error"></span>
         </div>
 
         <button type="submit" class="btn-cad">Cadastrar</button>
