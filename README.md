@@ -5,6 +5,8 @@ A form with an XSS reflected vulnerability that allows the attacker to catch the
 About
 =========
 * [Getting Started](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
+* [How it works](https://github.com/thiagodk0/form-XSS/blob/master/README.md#how-it-works-)
+* [Stats](https://github.com/thiagodk0/form-XSS/blob/master/README.md#stats-)
 
 ## Getting Started 🏁
 To execute the project, you'll need a server capable of running PHP, such as:
@@ -23,7 +25,7 @@ if(!isset($_COOKIE["cookieEmail"])|| (!isset($_COOKIE["cookieSenha"]))){
 ```        
 So the person's password and e-mail address are stored in cookies that are visible to everyone. 
 
-To change this, the last two parameters must be changed to "True".
+To solve this, the last two parameters must be changed to "True".
 
 ```
             setcookie("cookieEmail", $email, 0, "/", "", True, True);
@@ -31,4 +33,4 @@ To change this, the last two parameters must be changed to "True".
 ```    
 
 ## Stats 🚧
-I am still finishing some questions about the project, as the README, and thinking about a JS file with some validation rules for the form
+I am *still finishing* some questions about the project, as the README, and thinking about a JS file with some validation rules for the form
