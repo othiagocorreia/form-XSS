@@ -6,7 +6,7 @@ About
 =========
 * [Getting Started](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
 * [How it works](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
-* [Stats](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
+* [Stats](https://github.com/thiagodk0/form-XSS/blob/master/README.md#stats-)
 
 ## Getting Started 🏁
 To execute the project, you'll need a server capable of running PHP, such as:
