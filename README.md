@@ -5,7 +5,7 @@ A form with an XSS reflected vulnerability that allows the attacker to catch the
 About
 =========
 * [Getting Started](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
-* [How it works](https://github.com/thiagodk0/form-XSS/blob/master/README.md#how-it-works-)
+* [How it works](https://github.com/thiagodk0/form-XSS/blob/master/README.md#getting-started-)
 * [Stats](https://github.com/thiagodk0/form-XSS/blob/master/README.md#stats-)
 
 ## Getting Started 🏁
