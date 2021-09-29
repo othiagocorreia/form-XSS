@@ -32,5 +32,5 @@ To solve this, the last two parameters must be changed to "True".
             setcookie("cookieSenha", $senha, 0, "/", "", True, True);
 ```    
 
-## Stats 🚧
+## Status 🚧
 I am *still finishing* some questions about the project, as the README, and thinking about a JS file with some validation rules for the form
